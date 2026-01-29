@@ -13,6 +13,7 @@ const Navbar = ({ language, setLanguage, onNavigate, labels }) => {
       <div className="nav-inner">
         <button className="nav-left" onClick={() => onNavigate('hero')} type="button">
           <img src={logo} alt="VO.MARKET logo" className="nav-logo" />
+          <h1 className='nav-title'>MARKET</h1>
         </button>
 
         <div className="nav-center">
