@@ -1,0 +1,224 @@
+.how-root {
+  padding-top: 12px;
+}
+
+.how-header {
+  margin-bottom: 26px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.how-step-card {
+  padding: 18px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.how-step-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0 0, rgba(34, 197, 94, 0.18), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.how-step-card:hover::after {
+  opacity: 1;
+}
+
+.how-step-badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+}
+
+.how-step-title {
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.how-animation-card {
+  margin-top: 10px;
+  padding: 18px 18px 16px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.42);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.95);
+}
+
+.how-animation-header {
+  font-size: 0.84rem;
+  color: #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.how-animation-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.how-node {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.how-node-start {
+  background: rgba(34, 197, 94, 0.16);
+  border: 1px solid rgba(34, 197, 94, 0.7);
+  color: #bbf7d0;
+}
+
+.how-node-middle {
+  background: rgba(56, 189, 248, 0.16);
+  border: 1px solid rgba(56, 189, 248, 0.7);
+  color: #e0f2fe;
+}
+
+.how-node-end {
+  background: rgba(129, 140, 248, 0.16);
+  border: 1px solid rgba(129, 140, 248, 0.7);
+  color: #e0e7ff;
+}
+
+.how-track-line {
+  flex: 1;
+  height: 2px;
+  margin-inline: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.4), rgba(30, 64, 175, 0.7));
+}
+
+.how-truck {
+  position: absolute;
+  left: 10%;
+  bottom: 7px;
+  transform: translateX(-50%);
+  animation: truck-move 5s linear infinite;
+  pointer-events: none;
+}
+
+.how-truck-icon {
+  width: 34px;
+  height: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #22c55e, #38bdf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #020617;
+  box-shadow: 0 8px 26px rgba(34, 197, 94, 0.8);
+}
+
+.how-truck-shadow {
+  width: 26px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.95), transparent 70%);
+  opacity: 0.8;
+}
+
+.how-animation-footer {
+  border-top: 1px dashed rgba(148, 163, 184, 0.3);
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.how-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #a5b4fc;
+}
+
+@keyframes truck-move {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@media (max-width: 840px) {
+  .how-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .how-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .how-animation-track {
+    padding-bottom: 16px;
+  }
+
+  .how-animation-card {
+    padding: 16px 14px 14px;
+  }
+
+  .how-node {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .how-truck-icon {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-header {
+    margin-bottom: 18px;
+  }
+
+  .how-grid {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .how-step-card {
+    padding: 16px 12px 14px;
+  }
+
+  .how-step-title {
+    font-size: 0.95rem;
+  }
+
+  .how-animation-header {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+}

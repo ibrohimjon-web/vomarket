@@ -1,0 +1,719 @@
+.hero-root {
+  padding-top: 72px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 32px;
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+  max-width: 520px;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.hero-secondary-btn {
+  border-style: dashed;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.hero-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card {
+  border-radius: 18px;
+  background: radial-gradient(circle at 0 0, rgba(34, 197, 94, 0.24), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.2), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 26px 80px rgba(15, 23, 42, 0.96);
+}
+
+.hero-card-main {
+  width: 100%;
+  max-width: 340px;
+  padding: 18px 16px 16px;
+}
+
+.hero-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.hero-card-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.hero-card-status {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(22, 163, 74, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.8);
+  color: #bbf7d0;
+}
+
+.hero-card-status-neutral {
+  background: rgba(15, 23, 42, 0.82);
+  border-color: rgba(148, 163, 184, 0.55);
+  color: #e5e7eb;
+}
+
+.hero-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-route {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1fr minmax(0, 1fr) 1fr minmax(0, 1fr);
+  align-items: center;
+  gap: 6px;
+  padding: 10px 10px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  overflow: hidden;
+}
+
+.hero-route-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-route-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 197, 94, 0.16);
+  border: 1px solid rgba(34, 197, 94, 0.7);
+  color: #bbf7d0;
+  font-size: 1.05rem;
+}
+
+.hero-route-icon-mid {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.7);
+  color: #e0f2fe;
+}
+
+.hero-route-icon-end {
+  background: rgba(129, 140, 248, 0.16);
+  border-color: rgba(129, 140, 248, 0.7);
+  color: #e0e7ff;
+}
+
+.hero-route-label {
+  font-size: 0.72rem;
+  color: #9ca3af;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hero-route-line {
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.35), rgba(30, 64, 175, 0.7));
+}
+
+.hero-route-truck {
+  position: absolute;
+  left: 12%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  animation: hero-truck-move 5.2s linear infinite;
+  pointer-events: none;
+}
+
+.hero-route-truck-icon {
+  width: 32px;
+  height: 22px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #22c55e, #38bdf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #020617;
+  box-shadow: 0 8px 26px rgba(34, 197, 94, 0.8);
+}
+
+.hero-route-truck-shadow {
+  width: 24px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.95), transparent 70%);
+  opacity: 0.8;
+}
+
+.hero-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-chip {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.hero-chip-outline {
+  background: rgba(15, 23, 42, 0.7);
+  border-style: dashed;
+}
+
+.hero-progress-row {
+  padding: 10px 10px 9px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  color: #9ca3af;
+}
+
+.hero-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  overflow: hidden;
+}
+
+.hero-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 68%;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  border-radius: 999px;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.7);
+  animation: hero-progress-pulse 1.8s ease-in-out infinite alternate;
+}
+
+.hero-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  color: #9ca3af;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  background: rgba(15, 23, 42, 0.88);
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.hero-badge-sub {
+  opacity: 0.85;
+}
+
+.hero-card-float {
+  position: absolute;
+  bottom: -10px;
+  right: -6px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.95);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: hero-float 3.8s ease-in-out infinite;
+}
+
+.hero-card-float-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+}
+
+.hero-card-float-text {
+  font-size: 0.8rem;
+  color: #e5e7eb;
+}
+
+@keyframes hero-progress-pulse {
+  0% {
+    width: 62%;
+  }
+  100% {
+    width: 76%;
+  }
+}
+
+@keyframes hero-truck-move {
+  0% {
+    left: 12%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 88%;
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Tablet and smaller desktop */
+@media (max-width: 1100px) {
+  .hero-grid {
+    gap: 24px;
+    padding: 28px 24px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+  .hero-root {
+    padding-top: 56px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 24px 20px;
+  }
+
+  .hero-main {
+    gap: 16px;
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
+    margin-bottom: 8px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-cta-row {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-meta {
+    justify-content: center;
+  }
+
+  .hero-card-main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-card-float {
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile landscape and small tablets */
+@media (max-width: 768px) {
+  .hero-root {
+    padding-top: 48px;
+  }
+
+  .hero-grid {
+    padding: 20px 18px;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hero-cta-row .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .hero-pill {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+
+  .hero-card-main {
+    padding: 16px 14px 14px;
+  }
+
+  .hero-card-header {
+    margin-bottom: 12px;
+  }
+
+  .hero-card-label {
+    font-size: 0.76rem;
+  }
+
+  .hero-card-status {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  .hero-route {
+    grid-template-columns: minmax(0, 1fr) 0.8fr minmax(0, 1fr) 0.8fr minmax(0, 1fr);
+    gap: 4px;
+    padding: 8px 8px 10px;
+  }
+
+  .hero-route-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .hero-route-label {
+    font-size: 0.65rem;
+  }
+
+  .hero-route-truck-icon {
+    width: 28px;
+    height: 20px;
+    font-size: 0.85rem;
+  }
+
+  .hero-badges {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+    justify-content: center;
+  }
+
+  .hero-card-float {
+    padding: 6px 10px;
+  }
+
+  .hero-card-float-label {
+    font-size: 0.68rem;
+  }
+
+  .hero-card-float-text {
+    font-size: 0.76rem;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 600px) {
+  .hero-root {
+    padding-top: 44px;
+  }
+
+  .hero-grid {
+    padding: 18px 16px;
+    gap: 18px;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    max-width: 100%;
+  }
+
+  .hero-main {
+    gap: 14px;
+  }
+
+  .hero-cta-row .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .hero-card-main {
+    padding: 14px 12px 12px;
+  }
+
+  .hero-card-body {
+    gap: 12px;
+  }
+
+  .hero-route {
+    grid-template-columns: minmax(0, 1fr) 0.6fr minmax(0, 1fr) 0.6fr minmax(0, 1fr);
+    gap: 3px;
+    padding: 6px 6px 8px;
+  }
+
+  .hero-route-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+
+  .hero-route-label {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+
+  .hero-route-line {
+    height: 1.5px;
+  }
+
+  .hero-route-truck {
+    bottom: 4px;
+  }
+
+  .hero-route-truck-icon {
+    width: 24px;
+    height: 18px;
+    font-size: 0.75rem;
+  }
+
+  .hero-route-truck-shadow {
+    width: 20px;
+    height: 5px;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 4px 9px;
+  }
+
+  .hero-card-float {
+    max-width: 100%;
+    padding: 6px 9px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero-root {
+    padding-top: 40px;
+  }
+
+  .hero-grid {
+    padding: 16px 14px;
+    gap: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .hero-cta-row .btn {
+    font-size: 0.88rem;
+    padding: 0.65rem 1.2rem;
+  }
+
+  .hero-pill {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .hero-card-main {
+    padding: 12px 10px 10px;
+  }
+
+  .hero-card-header {
+    margin-bottom: 10px;
+  }
+
+  .hero-card-label {
+    font-size: 0.72rem;
+  }
+
+  .hero-card-status {
+    font-size: 0.64rem;
+    padding: 2px 7px;
+  }
+
+  .hero-route {
+    padding: 5px 5px 7px;
+  }
+
+  .hero-route-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.75rem;
+  }
+
+  .hero-route-label {
+    font-size: 0.58rem;
+  }
+
+  .hero-route-truck-icon {
+    width: 22px;
+    height: 16px;
+    font-size: 0.7rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
+
+  .hero-card-float-label {
+    font-size: 0.64rem;
+  }
+
+  .hero-card-float-text {
+    font-size: 0.72rem;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .hero-route {
+    grid-template-columns: minmax(0, 1fr) 0.5fr minmax(0, 1fr) 0.5fr minmax(0, 1fr);
+  }
+
+  .hero-route-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-route-label {
+    font-size: 0.55rem;
+  }
+}
+

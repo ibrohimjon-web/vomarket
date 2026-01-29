@@ -1,0 +1,136 @@
+.footer-root {
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  margin-top: 24px;
+  background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98));
+}
+
+.footer-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 20px 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-logo {
+  font-size: 1.06rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 6px 0 6px;
+}
+
+.footer-heading {
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin: 0 0 4px;
+}
+
+.footer-link-btn {
+  border: none;
+  background: none;
+  padding: 3px 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  text-align: left;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.16s ease-out, transform 0.16s ease-out;
+}
+
+.footer-link-btn:hover {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.footer-link-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.86rem;
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.footer-link-inline:hover {
+  color: #c7d2fe;
+}
+
+.footer-social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  font-size: 0.82rem;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-social-pill:hover {
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(15, 23, 42, 0.9);
+  text-align: center;
+  padding: 10px 16px 14px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+@media (max-width: 840px) {
+  .footer-inner {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footer-root {
+    margin-top: 32px;
+  }
+
+  .footer-link-btn {
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-inner {
+    padding: 22px 14px 16px;
+  }
+
+  .footer-social-row {
+    flex-direction: column;
+  }
+
+  .footer-social-pill {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,126 @@
+.contact-root {
+  padding-top: 12px;
+  padding-bottom: 72px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px 24px 24px;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-call-btn {
+  align-self: flex-start;
+}
+
+.contact-telegram-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-question-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.contact-question-link:hover {
+  color: #e5e7eb;
+}
+
+.contact-question-pill {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  font-size: 0.8rem;
+}
+
+.contact-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-meta-card {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.contact-meta-title {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.contact-meta-text {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 820px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 18px;
+  }
+
+  .contact-call-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-root {
+    padding-bottom: 64px;
+  }
+
+  .contact-layout {
+    padding: 20px 16px 16px;
+    gap: 18px;
+  }
+
+  .contact-telegram-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-telegram-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-question-link {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-meta-card {
+    padding: 10px 10px;
+  }
+}
