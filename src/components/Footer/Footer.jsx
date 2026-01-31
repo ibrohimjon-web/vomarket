@@ -47,7 +47,7 @@ const Footer = ({ content, navLabels, onNavigate }) => {
           <h4 className="footer-heading">{content.socialTitle}</h4>
           <div className="footer-social-row">
             <a
-              href="https://t.me/vomarket_uz"
+              href="https://t.me/vomarket_channel"
               target="_blank"
               rel="noreferrer"
               className="footer-social-pill"
@@ -56,7 +56,7 @@ const Footer = ({ content, navLabels, onNavigate }) => {
               <span>Telegram</span>
             </a>
             <a
-              href="https://instagram.com/vomarket"
+              href="https://instagram.com/vo.market"
               target="_blank"
               rel="noreferrer"
               className="footer-social-pill"

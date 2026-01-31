@@ -15,79 +15,79 @@ export const translations = {
       contact: 'Aloqa',
     },
     hero: {
-      title: 'VO MARKET — zamonaviy onlayn market',
+      title: 'VO.MARKET — zamonaviy onlayn market',
       subtitle:
-        'VOMARKET — barcha turdagi mahsulotlarni qulay, tez va ishonchli xarid qilish imkoniyati. Buyurtma bering, savatga qo‘shing, yetkazib berish yoki punktdan bepul olib keting.',
+        'VO.MARKET — butun O‘zbekiston bo‘ylab turli xil mahsulotlarni qulay, xavfsiz va ishonchli tarzda buyurtma qilish imkoniyati. Buyurtmangiz to‘g‘ridan-to‘g‘ri siz turgan manzilga yetkazib beriladi.',
       primaryCta: 'Mahsulotlarni ko‘rish',
       secondaryCta: 'Telegram bot orqali buyurtma',
-      metaPills: ['Namangan bo‘ylab xizmat', '24/7 qo‘llab-quvvatlash'],
+      metaPills: ['Butun O‘zbekiston bo‘ylab', '24/7 qo‘llab-quvvatlash'],
       badges: {
-        primary: '1 kunda yetkazib berish',
-        secondary: 'COD & karta orqali to‘lov',
+        primary: '3–5 kunda yetkazib berish',
+        secondary: 'Naqd va karta orqali to‘lov',
       },
       float: {
-        label: 'VOMARKET',
-        text: 'Sizga yaqin bo‘lgan onlayn bozor.',
+        label: 'VO.MARKET',
+        text: 'Butun O‘zbekiston uchun yagona onlayn bozor.',
       },
       visual: {
         title: 'Yetkazib berish',
-        route: 'Ombor → Punkt',
+        route: 'Ombor → Buyurtma egasi',
         from: 'Ombor',
-        to: 'Punkt',
-        status: 'Yo‘lda',
+        to: 'Manzil',
+        status: 'Yetkazilmoqda',
       },
     },
     advantages: {
-      title: 'Nega aynan VOMARKET?',
-      subtitle: 'Xaridlaringizni yanada oson, ishonchli va qulay qiling.',
+      title: 'Nega aynan VO.MARKET?',
+      subtitle: 'Biz xarid jarayonini siz uchun maksimal darajada qulay qilamiz.',
       items: [
-        'Bepul punktdan olish',
-        'Yetkazib berish xizmati mavjud',
-        'Namangan bo‘ylab xizmat',
-        'Arzon narxlar',
-        '24/7 aloqa',
+        'Butun O‘zbekiston bo‘ylab yetkazib berish',
+        'Buyurtma egasining manziliga to‘g‘ridan-to‘g‘ri yetkazish',
+        'Ishonchli va tekshirilgan mahsulotlar',
+        'Hamyonbop narxlar',
+        '24/7 aloqa va yordam',
       ],
     },
     howItWorks: {
       title: 'Qanday ishlaydi?',
-      subtitle: 'Uchta oddiy qadam orqali buyurtma bering.',
-      steps: ['Tovarni tanlash', 'Buyurtma berish', 'Yetkazib berish yoki punktdan olish'],
+      subtitle: 'Buyurtma berish atigi uchta oddiy qadamdan iborat.',
+      steps: [
+        'Mahsulotni tanlash',
+        'Buyurtmani rasmiylashtirish',
+        'Manzilingizga yetkazib berish',
+      ],
     },
     location: {
-      title: 'Asosiy ofisimiz',
+      title: 'Bizning bosh ofis',
       subtitle:
-        'Namangan shahrida joylashgan ofisimiz orqali ham buyurtma berishingiz mumkin.',
+        'Bosh ofisimiz Namangan shahrida joylashgan, ammo xizmatlarimiz butun O‘zbekiston bo‘ylab faoliyat yuritadi.',
     },
     faq: {
       title: 'Ko‘p so‘raladigan savollar',
-      subtitle: 'Savollaringiz bo‘lsa, biz bilan bemalol bog‘laning.',
+      subtitle: 'Sizni qiziqtirgan savollarga javoblar.',
       items: [
         {
-          q: 'Tovarlar sifati qanday?',
-          a: 'Barcha mahsulotlarimiz sertifikatlangan va sifat nazoratidan o‘tkazilgan. Ishonch bilan xarid qilishingiz mumkin.',
+          q: 'Mahsulotlar sifati kafolatlanadimi?',
+          a: 'Ha, barcha mahsulotlar sifat nazoratidan o‘tkaziladi va ishonchli yetkazib beruvchilardan olinadi.',
         },
         {
           q: 'Qanday to‘lov usullari mavjud?',
-          a: 'Naqd pul, karta orqali to‘lov va ayrim hollarda onlayn to‘lov usullari mavjud.',
+          a: 'Naqd pul, bank kartalari va ayrim holatlarda onlayn to‘lovlar mavjud.',
         },
         {
-          q: 'Qanday buyurtma beriladi?',
-          a: 'Sayt orqali savatga qo‘shib, ma’lumotlaringizni qoldirasiz yoki Telegram bot orqali buyurtma berasiz.',
+          q: 'Buyurtmani qanday beraman?',
+          a: 'Sayt orqali savatga qo‘shib yoki Telegram botimiz orqali tezda buyurtma berishingiz mumkin.',
         },
         {
           q: 'Yetkazib berish qancha vaqt oladi?',
-          a: 'Namangan shahri bo‘ylab odatda 1 ish kuni ichida yetkazib beriladi.',
-        },
-        {
-          q: 'Punktdan olish bepulmi?',
-          a: 'Ha, o‘z punktimizdan olib ketish to‘liq bepul.',
+          a: 'Yetkazib berish hududga qarab 3–5 ish kuni ichida amalga oshiriladi.',
         },
       ],
     },
     contact: {
       title: 'Biz bilan bog‘laning',
       subtitle:
-        'Savolingiz, taklifingiz yoki buyurtmangiz bormi? Quyidagi usullar orqali tezda aloqaga chiqing.',
+        'Savol, taklif yoki buyurtma bo‘yicha biz bilan qulay usulda bog‘laning.',
       call: 'Qo‘ng‘iroq qilish',
       question: 'Savolingiz bormi?',
       botLabel: 'Telegram bot',
@@ -95,12 +95,15 @@ export const translations = {
     },
     footer: {
       about:
-        'VOMARKET — Namanganda barcha turdagi mahsulotlarni qulay onlayn buyurtma qilish va yetkazib berish xizmati.',
+        'VO.MARKET — butun O‘zbekiston bo‘ylab mahsulotlarni onlayn buyurtma qilish va manzilga yetkazib berish xizmati.',
       linksTitle: 'Bo‘limlar',
       socialTitle: 'Ijtimoiy tarmoqlar',
-      copyright: 'Barcha huquqlar himoyalangan.',
+      copyright: '© VO.MARKET. Barcha huquqlar himoyalangan.',
     },
   },
+
+  /* ================= RU ================= */
+
   ru: {
     navbar: {
       hero: 'Главная',
@@ -111,78 +114,74 @@ export const translations = {
       contact: 'Контакты',
     },
     hero: {
-      title: 'VOMARKET — современный онлайн-маркет',
+      title: 'VO.MARKET — современный онлайн-маркет',
       subtitle:
-        'VOMARKET — удобный и надежный способ заказать любые товары с доставкой или бесплатным самовывозом из пункта выдачи.',
-      primaryCta: 'Посмотреть товары',
+        'VO.MARKET — удобный сервис заказа товаров с доставкой по всему Узбекистану прямо до вашего адреса.',
+      primaryCta: 'Перейти к товарам',
       secondaryCta: 'Заказать через Telegram-бота',
-      metaPills: ['Работаем по Намангану', 'Поддержка 24/7'],
+      metaPills: ['Доставка по Узбекистану', 'Поддержка 24/7'],
       badges: {
-        primary: 'Доставка за 1 день',
-        secondary: 'Оплата наличными и картой',
+        primary: 'Доставка 3–5 дней',
+        secondary: 'Наличные и карта',
       },
       float: {
-        label: 'VOMARKET',
-        text: 'Онлайн-маркет рядом с вами.',
+        label: 'VO.MARKET',
+        text: 'Онлайн-маркет для всей страны.',
       },
       visual: {
         title: 'Доставка',
-        route: 'Склад → Пункт',
+        route: 'Склад → Клиент',
         from: 'Склад',
-        to: 'Пункт',
+        to: 'Адрес',
         status: 'В пути',
       },
     },
     advantages: {
-      title: 'Почему VOMARKET?',
-      subtitle: 'Делаем покупки проще, быстрее и выгоднее.',
+      title: 'Почему VO.MARKET?',
+      subtitle: 'Мы делаем онлайн-покупки удобными и надежными.',
       items: [
-        'Бесплатный самовывоз',
-        'Доступна доставка',
-        'Обслуживание по всему Намангану',
-        'Выгодные цены',
-        'Поддержка 24/7',
+        'Доставка по всему Узбекистану',
+        'Прямая доставка до клиента',
+        'Проверенное качество товаров',
+        'Доступные цены',
+        'Круглосуточная поддержка',
       ],
     },
     howItWorks: {
-      title: 'Как работает VOMARKET?',
-      subtitle: 'Три шага от выбора товара до получения.',
-      steps: ['Выбор товара', 'Оформление заказа', 'Доставка или самовывоз'],
+      title: 'Как это работает?',
+      subtitle: 'Всего три шага до получения заказа.',
+      steps: [
+        'Выбор товара',
+        'Оформление заказа',
+        'Доставка по вашему адресу',
+      ],
     },
     location: {
       title: 'Наш главный офис',
-      subtitle: 'Офис в Намангане, где вы также можете оформить заказ.',
+      subtitle:
+        'Офис расположен в Намангане, при этом доставка осуществляется по всей стране.',
     },
     faq: {
       title: 'Часто задаваемые вопросы',
-      subtitle: 'Если у вас остались вопросы — напишите нам.',
+      subtitle: 'Ответы на популярные вопросы клиентов.',
       items: [
         {
-          q: 'Какое качество товаров?',
-          a: 'Все товары проходят проверку качества. Мы работаем только с надежными поставщиками.',
+          q: 'Гарантируется ли качество товаров?',
+          a: 'Да, все товары проходят контроль качества.',
         },
         {
           q: 'Какие способы оплаты доступны?',
-          a: 'Наличные, оплата картой, а также возможны онлайн-платежи.',
-        },
-        {
-          q: 'Как оформить заказ?',
-          a: 'Выберите товар на сайте и оставьте контакты или воспользуйтесь нашим Telegram-ботом.',
+          a: 'Наличные, банковские карты и онлайн-оплата.',
         },
         {
           q: 'Сколько времени занимает доставка?',
-          a: 'По Намангану обычно доставка занимает до 1 рабочего дня.',
-        },
-        {
-          q: 'Самовывоз бесплатный?',
-          a: 'Да, самовывоз из пункта выдачи полностью бесплатен.',
+          a: 'Доставка занимает от 3 до 5 рабочих дней.',
         },
       ],
     },
     contact: {
       title: 'Свяжитесь с нами',
-      subtitle:
-        'Есть вопрос или предложение? Напишите в Telegram или позвоните — мы всегда на связи.',
+      subtitle: 'Мы всегда готовы помочь вам.',
       call: 'Позвонить',
       question: 'Есть вопрос?',
       botLabel: 'Telegram-бот',
@@ -190,12 +189,15 @@ export const translations = {
     },
     footer: {
       about:
-        'VOMARKET — онлайн-маркет в Намангане с удобным заказом и быстрой доставкой товаров.',
+        'VO.MARKET — онлайн-маркет с доставкой товаров по всему Узбекистану.',
       linksTitle: 'Разделы',
-      socialTitle: 'Соцсети',
-      copyright: 'Все права защищены.',
+      socialTitle: 'Социальные сети',
+      copyright: '© VO.MARKET. Все права защищены.',
     },
   },
+
+  /* ================= EN ================= */
+
   en: {
     navbar: {
       hero: 'Home',
@@ -206,79 +208,70 @@ export const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'VOMARKET — modern e-market',
+      title: 'VO.MARKET — modern online marketplace',
       subtitle:
-        'VOMARKET lets you buy all kinds of products quickly, conveniently and safely with delivery or free pickup from our point.',
+        'VO.MARKET allows you to order a wide range of products with reliable delivery across Uzbekistan directly to your address.',
       primaryCta: 'Browse products',
       secondaryCta: 'Order via Telegram bot',
-      metaPills: ['Serving Namangan', 'Support 24/7'],
+      metaPills: ['Nationwide delivery', '24/7 support'],
       badges: {
-        primary: 'Delivery in 1 day',
+        primary: 'Delivery in 3–5 days',
         secondary: 'Cash & card payments',
       },
       float: {
-        label: 'VOMARKET',
-        text: 'Your nearby online marketplace.',
+        label: 'VO.MARKET',
+        text: 'One marketplace for the whole country.',
       },
       visual: {
         title: 'Delivery',
-        route: 'Warehouse → Pickup point',
+        route: 'Warehouse → Customer',
         from: 'Warehouse',
-        to: 'Pickup',
-        status: 'On the way',
+        to: 'Address',
+        status: 'In transit',
       },
     },
     advantages: {
       title: 'Why VO.MARKET?',
-      subtitle: 'We make your everyday shopping simple, fast and reliable.',
+      subtitle: 'We make online shopping simple and reliable.',
       items: [
-        'Free pickup point',
-        'Home delivery available',
-        'Service across Namangan',
-        'Affordable prices',
-        'Support 24/7',
+        'Delivery across Uzbekistan',
+        'Direct delivery to your address',
+        'Verified product quality',
+        'Affordable pricing',
+        '24/7 customer support',
       ],
     },
     howItWorks: {
       title: 'How it works',
-      subtitle: 'Order in three simple steps.',
-      steps: ['Choose products', 'Place an order', 'Delivery or pickup'],
+      subtitle: 'Just three easy steps.',
+      steps: [
+        'Choose products',
+        'Place your order',
+        'Get delivery to your address',
+      ],
     },
     location: {
       title: 'Our main office',
       subtitle:
-        'Located in Namangan city. You can also place orders directly at the office.',
+        'Our head office is located in Namangan, while we deliver nationwide.',
     },
     faq: {
       title: 'Frequently asked questions',
-      subtitle: 'If you still have any questions, feel free to contact us.',
+      subtitle: 'Helpful answers for our customers.',
       items: [
         {
-          q: 'How is the product quality?',
-          a: 'All products are checked and verified. We work only with trusted suppliers.',
-        },
-        {
-          q: 'What payment methods are available?',
-          a: 'Cash, card payments and in some cases online payments.',
-        },
-        {
-          q: 'How do I place an order?',
-          a: 'Add items to the cart on the website and leave your details, or use our Telegram bot.',
+          q: 'Is product quality guaranteed?',
+          a: 'Yes, all products are quality-checked.',
         },
         {
           q: 'How long does delivery take?',
-          a: 'Within Namangan, usually within one business day.',
-        },
-        {
-          q: 'Is pickup free?',
-          a: 'Yes, pickup from our point is completely free.',
+          a: 'Delivery usually takes 3–5 business days.',
         },
       ],
     },
     contact: {
       title: 'Get in touch',
-      subtitle:
-        'Have a question, suggestion or order request? Reach us instantly using the options below.',
+      subtitle: 'We are always here to help.',
       call: 'Call now',
       question: 'Have a question?',
       botLabel: 'Telegram bot',
@@ -286,11 +279,10 @@ export const translations = {
     },
     footer: {
       about:
-        'VOMARKET is an online marketplace in Namangan with convenient ordering and fast delivery.',
+        'VO.MARKET is an online marketplace providing nationwide delivery across Uzbekistan.',
       linksTitle: 'Sections',
-      socialTitle: 'Social',
-      copyright: 'All rights reserved.',
+      socialTitle: 'Social media',
+      copyright: '© VO.MARKET. All rights reserved.',
     },
   },
 }
-
